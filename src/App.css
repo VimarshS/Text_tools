@@ -1,7 +1,15 @@
+/* General App container */
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* header and content start from top */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Logo (if used) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,21 +21,23 @@
   }
 }
 
+/* Header container (optional, if used for layout) */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+/* Link styling */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
 }
 
+/* Spinner animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +45,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Buttons spacing (optional, overrides for all buttons) */
+button {
+  margin: 4px 4px;
+}
+
+/* Textarea resizing */
+textarea {
+  resize: vertical;
+  width: 100%;
 }
